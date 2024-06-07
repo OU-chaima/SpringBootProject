@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<h1 th:text="${title}">Home</h1>
+<p>Welcome to the Employee Management System. Please use the navigation below to access the relevant sections.</p>
+<nav>
+    <ul>
+        <li><a href="/assign">Assign Employee to Project</a></li>
+        <li><a href="/employees">View and Manage Employees</a></li>
+        <li><a href="/api/employees">API - View Employees (JSON)</a></li>
+    </ul>
+</nav>
+</body>
+</html>
+
